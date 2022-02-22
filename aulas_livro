@@ -1,0 +1,76 @@
+#Exercício 8.1: função que retorna o maior de dois números
+def maior (a, b):
+    if a > b:
+        return a
+    elif a < b:
+        return b
+    else:
+        return "São iguais"
+        
+        
+#Exercício 8.2 Função que retorna se o primeiro número é multiplo do segundo
+def multi (a, b):
+    if b % a == 0:
+        return "true"
+    else:
+        return "False"
+        
+        
+#Exercício 8.3 Recebe o comprimento de um lado de um quadrado e retorna a área
+def quad (a):
+    print (f'Um quadrado com lateral de tamanho {a}m tem uma área de {a * a}m²')
+    
+    
+#Exercício 8.4 Recebe a base e altura de um triangulo e retorna a área
+def tri (x, y):
+    return (f'Um triângulo com base {x}m e altura {y}m tem uma área de {(x * y)//2} m²')
+
+
+
+ 
+#8.1
+def pesquise(lista, valor):
+    for x, e in enumerate(lista):
+        if e == valor:
+            return x
+    return None
+L = [10, 20, 25, 30]
+print(pesquise(L, 25))
+print(pesquise(L, 36))
+2
+None
+def teste(lista, valor):
+    if valor in lista:
+        return lista.index(valor)
+    return None
+lista = [1, 2, 3, 4, 5, 6]
+teste (lista, 5)
+4
+ 
+def soma(L):
+    total = 0
+    x = 0
+    while x < 5:
+        total += L[x]
+        x += 1
+    return total
+L = [1, 7, 2, 9, 15]
+print(soma(L))
+print(soma([7, 9, 12, 3, 100, 20, 4]))
+34
+131
+
+
+
+
+# Missão 1: Implementar um algoritmo para determinar se uma string possui todos os caracteres exclusivos
+def exclusivo (teste, letra):
+    while letra in teste:
+        print (teste.index(letra))
+    return None
+
+teste = ("O rei roeu a roupa do rato de roma")
+letra = ("a")
+exclusivo (teste, "a")
+
+
